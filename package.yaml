@@ -1,0 +1,29 @@
+name: playing-with-bnfc-meta
+version: 0.1.0.0
+author: "Juan Bono"
+license: MIT
+github: juanbono/playing-with-bnfc-meta
+
+dependencies:
+  base
+
+library:
+  source-dirs:
+    - src/
+  dependencies:
+    - BNFC-meta 
+
+executables:
+  stlc-bnfc:
+    source-dirs: app/
+    main: Main.hs
+    dependencies:
+      - playing-with-bnfc-meta
+
+tests:
+  spec:
+    main: Spec.hs
+    source-dirs:
+      - test/
+    dependencies:
+      - playing-with-bnfc-meta

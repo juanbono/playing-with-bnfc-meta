@@ -1,0 +1,12 @@
+resolver: lts-8.19
+packages:
+- '.'
+- location:
+   git: https://github.com/JonasDuregard/BNFC-meta
+   commit: b285a7c74bf76f5a9f643737803b2379364ada00
+  extra-dep: true
+extra-deps:
+  ['BNFC-meta-0.5', 'alex-meta-0.3.0.9', 'happy-meta-0.2.0.9']
+flags: {}
+extra-package-dbs: []
+
